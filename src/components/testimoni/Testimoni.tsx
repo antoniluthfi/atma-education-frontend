@@ -42,6 +42,7 @@ const responsive = {
 export default function Testimoni() {
   return (
     <div className="mt-20 relative">
+      {/* @ts-ignore */}
       <Carousel
         swipeable
         draggable={false}
