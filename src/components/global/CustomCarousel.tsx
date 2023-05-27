@@ -59,7 +59,7 @@ export function CustomDots({
   );
 }
 
-export default function CustomCarousel({ children }: { children: ReactNode }) {
+export default function CustomCarousel({ children }: any) {
   return (
     <Carousel
       swipeable
