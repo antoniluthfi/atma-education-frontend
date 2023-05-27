@@ -69,7 +69,6 @@ export default function CustomCarousel({ children }: { children: ReactNode }) {
       showDots
       customDot={<CustomDots />}
       responsive={responsive}
-      ssr
       infinite
       autoPlay
       autoPlaySpeed={5000}
