@@ -1,5 +1,3 @@
-"use client"
-
 import React, { ReactNode } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -63,22 +61,25 @@ export function CustomDots({
 
 export default function CustomCarousel({ children }: { children: ReactNode }) {
   return (
-    <Carousel
-      swipeable
-      draggable={false}
-      showDots
-      customDot={<CustomDots />}
-      responsive={responsive}
-      infinite
-      autoPlay
-      autoPlaySpeed={5000}
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      deviceType="desktop"
-      renderDotsOutside
-      containerClass="p-10"
-      dotListClass="gap-3"
-    >
-      {children}
-    </Carousel>
+    <div>
+      {/* @ts-ignore */}
+      <Carousel
+        swipeable
+        draggable={false}
+        showDots
+        customDot={<CustomDots />}
+        responsive={responsive}
+        infinite
+        autoPlay
+        autoPlaySpeed={5000}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType="desktop"
+        renderDotsOutside
+        containerClass="p-10"
+        dotListClass="gap-3"
+      >
+        {children}
+      </Carousel>
+    </div>
   );
 }
