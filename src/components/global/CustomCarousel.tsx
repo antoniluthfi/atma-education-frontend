@@ -1,3 +1,5 @@
+"use client"
+
 import React, { ReactNode } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -59,7 +61,7 @@ export function CustomDots({
   );
 }
 
-export default function CustomCarousel({ children }: any) {
+export default function CustomCarousel({ children }: { children: ReactNode }) {
   return (
     <Carousel
       swipeable
